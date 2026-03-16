@@ -1,16 +1,55 @@
 body {
+  margin: 0;
   background: #f5f5f5;
   font-family: Arial, sans-serif;
+}
+
+.container {
   text-align: center;
-  margin: 0;
-  padding: 40px;
+  padding-top: 120px;
 }
 
-h1 {
+/* TITLE */
+
+.title {
+  font-size: 48px;
   color: #E65652;
+
+  animation: slideIn 1.5s ease forwards;
 }
 
-p {
+/* ANIMATION */
+
+@keyframes slideIn {
+
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+/* SUBTITLE */
+
+.subtitle {
+  font-size: 20px;
   color: #333;
-  font-size: 18px;
+
+  margin-top: 20px;
+
+  transition: all 0.3s ease;
+
+  display: inline-block;
+}
+
+/* HOVER EFFECT */
+
+.subtitle:hover {
+  color: #E65652;
+  transform: scale(1.08);
 }
